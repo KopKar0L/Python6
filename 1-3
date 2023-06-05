@@ -1,0 +1,40 @@
+Z1.
+s = 'Ala ma kota'
+lz = list(s)
+print(lz)
+for i in range(len(lz)):
+    print(lz[i])
+for i in lz:
+    print(i)
+    
+Z2.
+s = input("Wprowadź zdanie: ")
+ls = list(s)
+count_a = ls.count('a')
+print("Ilość wystąpień litery 'a' w zdaniu:", count_a)
+
+Z3.
+from math import factorial
+i = 2137
+s = str(i)
+lst = list(s)
+print(lst)
+print(factorial(4))
+print(factorial(5))
+print(factorial(6))
+n = factorial(1000)
+count_9 = str(n).count('9')
+print("Ilość cyfr 9 w 1000!: ", count_9)
+count_digits = []
+for digit in range(10):
+    count = str(n).count(str(digit))
+    count_digits.append(count)
+print("Ilość cyfr od 0 do 9 w 1000!: ", count_digits)
+n = factorial(2000)
+count_digits = []
+for digit in range(10):
+    count = str(2000).count(str(digit))
+    count_digits.append(count)
+print("Ilość cyfr od 0 do 9 w 2000!: ", count_digits)
+
+Z4.
